@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   get "/products/:id", controller: "products", action: "show"
 
   post "/products", controller: "products", action: "create"
+  
+  put "/products/:id", controller: "products", action: "update"
+
+  delete "/products/:id", controller: "products", action: "destroy"
 end
